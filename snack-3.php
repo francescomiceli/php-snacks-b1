@@ -42,6 +42,8 @@
 
 ?>
 
+
+
     <?php
     for($i = 0; $i < count($keys); $i++){
 
@@ -50,13 +52,13 @@
     ?>
 
     <!-- stampa data -->
-    
+    <h3>
         <?php
         echo $data;
         ?>
-    
+    </h3>
 
-    
+    <ul>
         <?php
         for($j = 0; $j < count($posts_data); $j++){
 
@@ -64,17 +66,17 @@
         ?>
 
         <!-- stampa post -->
-        
+        <li>
             <?php
             echo "{$post['title']} - {$post['text']} <br> Inviato da {$post['author']}";
             ?>
-       
+        </li>
 
         <?php
         }
         ?>
 
-    
+    </ul>
     <?php
     }
     ?>    
